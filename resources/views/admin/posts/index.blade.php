@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<table class="table">
+<table class="table ms_table">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -10,7 +10,6 @@
             <th scope="col">Content</th>
             <th scope="col">Date</th>
             <th scope="col">Published</th>
-            <th scope="col">Slug</th>
         </tr>
     </thead>
     <tbody>
@@ -22,7 +21,6 @@
             <td>{{$post->content}}</td>
             <td>{{$post->post_date}}</td>
             <td>{{$post->published}}</td>
-            <td>{{$post->slug}}</td>
         </tr>
         @endforeach
     </tbody>
