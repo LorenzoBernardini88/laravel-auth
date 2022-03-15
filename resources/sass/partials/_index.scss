@@ -26,3 +26,7 @@ tr:nth-child(odd){
 tr:nth-child(even){
     background-color: #2C3845;
 }
+td:last-child{
+    display: flex;
+    gap: 5px;
+}
