@@ -10,6 +10,7 @@
             <th scope="col">Content</th>
             <th scope="col">Date</th>
             <th scope="col">Published</th>
+            <th scope="col">actions</th>
         </tr>
     </thead>
     <tbody>
@@ -21,6 +22,11 @@
             <td>{{$post->content}}</td>
             <td>{{$post->post_date}}</td>
             <td>{{$post->published}}</td>
+            <td>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+            </td>
         </tr>
         @endforeach
     </tbody>
