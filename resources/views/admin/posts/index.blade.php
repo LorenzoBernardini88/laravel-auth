@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<table class="table ms_table">
+<table class="table ms_table table-borderless">
     <thead>
         <tr>
             <th scope="col">#</th>

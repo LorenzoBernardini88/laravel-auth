@@ -10969,10 +10969,29 @@ body {
 .ms_table {
   width: 80%;
   margin: 0 auto;
+  border-spacing: none;
+  color: #fff;
+}
+
+.ms_table thead {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.ms_table thead tr {
+  background-color: #2C3845;
 }
 
 th,
 td {
   text-align: center;
+}
+
+tr:nth-child(odd) {
+  background-color: #202932;
+}
+
+tr:nth-child(even) {
+  background-color: #2C3845;
 }
 
