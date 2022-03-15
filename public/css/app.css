@@ -17710,7 +17710,7 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: rgba(91, 185, 184, 0.7);
+  background-color: rgba(91, 185, 184, 0.6);
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
@@ -17727,6 +17727,7 @@ h1 {
   width: 90%;
   margin: 0 auto;
   border-spacing: none;
+  border-radius: 10px;
   color: #fefee9;
   font-size: 18px;
 }
