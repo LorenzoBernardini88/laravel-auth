@@ -1,6 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
+<h1>blog content</h1>
 <table class="table ms_table table-borderless">
     <thead>
         <tr>

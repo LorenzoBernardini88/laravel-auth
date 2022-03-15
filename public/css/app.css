@@ -1,11 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;
 
-/*!
- * Bootstrap v4.6.1 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+200;300;400;500;600;700;800;900&display=swap);@import url(https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;300;400;500;600;700&display=swap);@charset "UTF-8";
 
 :root {
   --blue: #3490dc;
@@ -17715,19 +17710,32 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: #4AA0E6;
+  background-color: rgba(91, 185, 184, 0.7);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: #2C3845;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 .ms_table {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   border-spacing: none;
-  color: #fff;
+  color: #fefee9;
+  font-size: 18px;
 }
 
 .ms_table thead {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 30px;
+  font-family: "Smooch Sans", sans-serif;
 }
 
 .ms_table thead tr {
@@ -17737,6 +17745,7 @@ body {
 th,
 td {
   text-align: center;
+  line-height: 23px;
 }
 
 tr:nth-child(odd) {
@@ -17750,5 +17759,9 @@ tr:nth-child(even) {
 td:last-child {
   display: flex;
   gap: 5px;
+}
+
+.btn-info {
+  background-color: #5BB9B8;
 }
 
