@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>blog content</h1>
-<a href="{{route("admin.posts.create")}}"><button type="button" class="btn btn-success">New Post</button></a>
-
 <table class="table ms_table table-borderless">
     <thead>
         <tr>
@@ -17,7 +14,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($data_post as $post)
+    
         <tr>
             <th scope="row">{{$post->id}}</th>
             <td>{{$post->post_author}}</td>
@@ -26,13 +23,9 @@
             <td>{{$post->post_date}}</td>
             <td>{{$post->published}}</td>
             <td>
-                <a href="{{route("admin.posts.show", $post->id)}}"><button type="button" class="btn btn-info"><i class="bi bi-info-circle"></i></button></a>
-                <a href="{{route("admin.posts.edit", $post->id)}}"><button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button></a>
+                <button type="button" class="btn btn-info"><i class="bi bi-info-circle"></i></button>
+                <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
                 <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i></button>
             </td>
         </tr>
-        @endforeach
-    </tbody>
-</table>
-
 @endsection
