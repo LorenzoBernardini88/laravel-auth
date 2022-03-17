@@ -30,7 +30,12 @@
             <td>
                 <a href="{{route("admin.posts.show", $post->id)}}"><button type="button" class="btn btn-info"><i class="bi bi-info-circle"></i></button></a>
                 <a href="{{route("admin.posts.edit", $post->id)}}"><button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button></a>
-                <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i></button>
+                <form action="{{route('admin.posts.destroy',$post->id)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger"><i class="bi bi-x-circle"></i></button>
+                    {{-- onclick="return confirm('Conferma cancellazione dato ?')" --}}
+                </form>
             </td>
         </tr>
         @endforeach

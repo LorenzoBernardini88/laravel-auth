@@ -23,9 +23,15 @@
             <td>{{$post->post_date}}</td>
             <td>{{$post->published}}</td>
             <td>
-                <button type="button" class="btn btn-info"><i class="bi bi-info-circle"></i></button>
-                <button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button>
-                <button type="button" class="btn btn-danger"><i class="bi bi-x-circle"></i></button>
+                <a href="{{route("admin.posts.show", $post->id)}}"><button type="button" class="btn btn-info"><i class="bi bi-info-circle"></i></button></a>
+                <a href="{{route("admin.posts.edit", $post->id)}}"><button type="button" class="btn btn-warning"><i class="bi bi-pencil-square"></i></button></a>
+                <form action="{{route('admin.posts.destroy',$post->id)}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger"><i class="bi bi-x-circle"></i></button>
+                    {{-- onclick="return confirm('Conferma cancellazione dato ?')" --}}
+                </form>
+                <a href="{{route("admin.posts.index", $post->id)}}"><button type="button" class="btn btn-success"><i class="bi bi-arrow-return-left"></i></button></a>
             </td>
         </tr>
 @endsection
