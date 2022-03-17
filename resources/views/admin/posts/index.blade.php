@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
+
 @section('content')
+
 <h1>blog content</h1>
 <a href="{{route("admin.posts.create")}}"><button type="button" class="btn btn-success">New Post</button></a>
 
